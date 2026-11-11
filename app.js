@@ -1,6 +1,6 @@
 'use strict';
 // Set to the deployed Apps Script URL AFTER deploying Code.gs for this workbook.
-const RESULTS_ENDPOINT = '';
+const RESULTS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbynO3wtmlayKCQ8InCXHU4ZZo9zMXO_U0oyJB63DxxboajAGX7pM-ysDHesPOlSCbF9/exec';
 const STORAGE_PREFIX = 'mg2u5_1448_';
 let sections=[], answers={}, student='', studentClass='', current=0, submitted=false;
 const $=id=>document.getElementById(id);
