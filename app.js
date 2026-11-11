@@ -16,3 +16,20 @@ function grade(){let correct=0,graded=0;for(const q of all()){const a=answers[q.
 async function submit(){const qs=all(),missing=qs.filter(q=>!isAnswered(q));if(missing.length){$('feedback').textContent=`Please complete the remaining ${missing.length} question(s) before submitting.`;return;}if(!RESULTS_ENDPOINT){$('feedback').textContent='Submission is not connected yet. Your answers are saved on this device. Please contact your teacher.';return;}if(submitted)return;const g=grade();const payload={workbook:'MG2',unit:'5',studentName:student,studentClass,score:g.correct,totalQuestions:g.graded,percentage:g.graded?Math.round(100*g.correct/g.graded):0,answers:qs.map(q=>({section:q.section,question:q.prompt,answer:answers[q.id]})),submissionId:(crypto.randomUUID?crypto.randomUUID():Date.now().toString())};$('submit').disabled=true;$('feedback').textContent='Sending…';try{await fetch(RESULTS_ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});submitted=true;$('feedback').textContent='Submission request sent. Ask your teacher to confirm receipt in Google Sheets.';}catch(e){$('feedback').textContent='Could not send. Your answers are still saved here. Please try again.';$('submit').disabled=false;}}
 $('start').onclick=begin;$('switch').onclick=()=>{if(!confirm('Return to the start page? Your answers will stay saved.'))return;$('work').hidden=true;$('welcome').hidden=false;};$('submit').onclick=submit;
 fetch('questions.json').then(r=>{if(!r.ok)throw Error('Question file unavailable');return r.json()}).then(data=>{sections=data;$('start').disabled=false}).catch(()=>{$('welcome').querySelector('p').textContent='Could not load questions. Please refresh the page.';$('start').disabled=true});$('start').disabled=true;
+window.fillTestAnswers = function () {
+  all().forEach(q => {
+    if (q.type === 'match') {
+      answers[q.id] = q.pairs.map(p => p[1]);
+    } else if (q.type === 'multi') {
+      answers[q.id] = [...q.answer];
+    } else if (q.type === 'choice') {
+      answers[q.id] = q.answer;
+    } else {
+      answers[q.id] = 'Test answer';
+    }
+  });
+
+  save();
+  render();
+  alert('Test answers filled successfully!');
+};
