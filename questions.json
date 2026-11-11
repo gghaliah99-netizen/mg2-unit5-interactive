@@ -1,0 +1,65 @@
+[
+{"title":"Listen & Discuss","description":"Jobs, job satisfaction and vocabulary","questions":[
+{"type":"match","prompt":"Match each job to its description.","pairs":[["zoologist","Studies and cares for animals"],["Screen writer","Writes scripts for TV and films"],["surgeon","A doctor who operates on patients"],["Race car driver","Drives fast cars"]]},
+{"type":"choice","prompt":"I want to have a lot of job …","options":["status","income","satisfaction"],"answer":"satisfaction"},
+{"type":"choice","prompt":"What kind of … do you hope to earn?","options":["employment","entire","income"],"answer":"income"},
+{"type":"choice","prompt":"Do any of your classes … group work?","options":["entail","respect","cooperate"],"answer":"entail"},
+{"type":"choice","prompt":"What’s your current employment …?","options":["status","respect","satisfaction"],"answer":"status"},
+{"type":"match","prompt":"Match the words to their meanings.","pairs":[["respectful","polite"],["cooperate","To work together"],["entail","require"],["appreciate","To be grateful"]]}
+]},
+{"title":"Grammar – The Subjunctive","description":"Subjunctive, I'd like you to, and I want you to","questions":[
+{"type":"multi","prompt":"Which statements use the subjunctive mood? Select all correct statements.","options":["It’s important that we follow our school rules.","I will give everyone a day off.","Our teacher insists that we study for the exam.","It is imperative that you not drive his car without permission."],"answer":["It’s important that we follow our school rules.","Our teacher insists that we study for the exam.","It is imperative that you not drive his car without permission."]},
+{"type":"choice","prompt":"I’d like you … look after the patient.","options":["too","to","two"],"answer":"to"},
+{"type":"choice","prompt":"I’d like you to … me a favor.","options":["do","does","did"],"answer":"do"},
+{"type":"choice","prompt":"I want you to … the assignment this afternoon.","options":["finish","finishes","finished"],"answer":"finish"},
+{"type":"choice","prompt":"I recommended that you … a specialist.","options":["see","to see","seeing"],"answer":"see"},
+{"type":"choice","prompt":"It is important that she … on time.","options":["comes","to coming","come"],"answer":"come"},
+{"type":"choice","prompt":"It is essential that you … your work experience.","options":["have listed","list","lists"],"answer":"list"},
+{"type":"choice","prompt":"I want you … the dish.","options":["cleaning","to clean","clean"],"answer":"to clean"},
+{"type":"choice","prompt":"It’s necessary that you … this medicine.","options":["take","took","to take"],"answer":"take"},
+{"type":"choice","prompt":"The manager insisted that he … late.","options":["works","work","is working"],"answer":"work"},
+{"type":"choice","prompt":"I'd like you … applying for the job.","options":["considering","consider","to consider"],"answer":"to consider"},
+{"type":"choice","prompt":"The boss demanded that he … late again.","options":["being not","to be not","not be"],"answer":"not be"}
+]},
+{"title":"Conversation & Vocabulary Building","description":"Real Talk expressions and word meanings","questions":[
+{"type":"choice","prompt":"I’m going to go outside. Could you … for me?","options":["discover","cover","keep it"],"answer":"cover"},
+{"type":"choice","prompt":"Sami needs help. He is really …","options":["on top","in a hurry","in a bind"],"answer":"in a bind"},
+{"type":"choice","prompt":"Sorry, but I have to … now since my dad is waiting for me at the gate.","options":["take off","be close","cover"],"answer":"take off"},
+{"type":"match","prompt":"Match the conversation expressions to their meanings.","pairs":[["help me out","Do me a favor"],["in a bind","in a difficult situation"]]},
+{"type":"choice","prompt":"… is determining what something is.","options":["Identifying","Flair","Infection"],"answer":"Identifying"},
+{"type":"choice","prompt":"… means to be confined or kept under restraint or control.","options":["Allergen","Captive","Flavor"],"answer":"Captive"},
+{"type":"match","prompt":"Match the vocabulary words to their meanings.","pairs":[["flair","Natural talent"],["analyze","Study closely"],["infection","Disease or sickness"]]},
+{"type":"match","prompt":"Match the words to their antonyms.","pairs":[["identical","different"],["determine","hesitate"],["captive","guard"]],"note":"The source worksheet lists 'guard' as the remaining match for 'captive'; this is not a standard antonym. Review this item before assigning."}
+]},
+{"title":"Reading – You Do What for a Living?","description":"Write your own answers using the reading text from your book.","questions":[
+{"type":"text","prompt":"Paragraph 1: What are some examples of unusual jobs mentioned in the text?"},
+{"type":"text","prompt":"Paragraph 2: What are some similarities between Lily's job and that of a regular fashion designer?"},
+{"type":"text","prompt":"Paragraph 3: How does a flavorist recreate a flavor?"},
+{"type":"text","prompt":"Paragraph 4: What is the main purpose of an elephant pedicurist's job?"}
+]},
+{"title":"Speaking – Unusual Jobs","description":"Write your opinion about each unusual job.","questions":[
+{"type":"text","prompt":"What do you think about being an odor judger?"},
+{"type":"text","prompt":"What do you think about being a golf ball diver?"},
+{"type":"text","prompt":"What do you think about being a cheese sprayer?"},
+{"type":"text","prompt":"What do you think about being a gum buster?"}
+]},
+{"title":"Writing – An Unusual Job","description":"Organize your ideas, then write an essay.","questions":[
+{"type":"text","prompt":"Job description: What does the person do?"},
+{"type":"text","prompt":"Job responsibilities: What are the main duties?"},
+{"type":"text","prompt":"Important background: What qualifications or experience are needed?"},
+{"type":"text","prompt":"Helpful characteristics: What personal qualities would help?"},
+{"type":"text","prompt":"Write an essay about an unusual job you might like to have.","long":true}
+]},
+{"title":"Form, Meaning & Function","description":"Question tags, obligations and polite requests","questions":[
+{"type":"choice","prompt":"You will go to the bank, …?","options":["don’t you","won’t you","are you"],"answer":"won’t you"},
+{"type":"choice","prompt":"He didn’t get the job, …?","options":["did he","does he","doesn’t he"],"answer":"did he"},
+{"type":"choice","prompt":"You … drive over the speed limit.","options":["need","needn’t","mustn’t"],"answer":"mustn’t"},
+{"type":"choice","prompt":"I … finish the report yesterday, but I forgot.","options":["will have","has to","had to"],"answer":"had to"},
+{"type":"choice","prompt":"… you mind telling me why you are late?","options":["Must","Would","Can"],"answer":"Would"},
+{"type":"choice","prompt":"Could you tell me …?","options":["what time is it","What time it is","what time"],"answer":"What time it is"},
+{"type":"choice","prompt":"You … smoke here. It’s not allowed.","options":["must","mustn’t","need to"],"answer":"mustn’t"},
+{"type":"choice","prompt":"Could you … me where the station is?","options":["tell","telling","to tell"],"answer":"tell"},
+{"type":"choice","prompt":"I … come to school yesterday. It was a weekend.","options":["didn’t have to","mustn’t","needed to"],"answer":"didn’t have to"},
+{"type":"choice","prompt":"They … be at the office at 9 a.m.","options":["must to","has to","have to"],"answer":"have to"}
+]}
+]
