@@ -29,7 +29,7 @@
 {"type":"choice","prompt":"… is determining what something is.","options":["Identifying","Flair","Infection"],"answer":"Identifying"},
 {"type":"choice","prompt":"… means to be confined or kept under restraint or control.","options":["Allergen","Captive","Flavor"],"answer":"Captive"},
 {"type":"match","prompt":"Match the vocabulary words to their meanings.","pairs":[["flair","Natural talent"],["analyze","Study closely"],["infection","Disease or sickness"]]},
-{"type":"match","prompt":"Match the words to their antonyms.","pairs":[["identical","different"],["determine","hesitate"],["captive","guard"]],"note":"The source worksheet lists 'guard' as the remaining match for 'captive'; this is not a standard antonym. Review this item before assigning."}
+{"type":"match","prompt":"Match the words to their antonyms.","pairs":[["identical","different"],["determine","hesitate"],["captive","["captive","free"]"]],"note":"The source worksheet lists 'guard' as the remaining match for 'captive'; this is not a standard antonym. Review this item before assigning."}
 ]},
 {"title":"Reading – You Do What for a Living?","description":"Write your own answers using the reading text from your book.","questions":[
 {"type":"text","prompt":"Paragraph 1: What are some examples of unusual jobs mentioned in the text?"},
